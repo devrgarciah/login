@@ -9,51 +9,62 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* Centrar contenido hijos*/
-  /* Comentario */
 }
-
+.fa-user {
+  color: #0091ff;
+  font-size: 100px;
+  margin-top: 30px;
+  border-radius: 100%;
+  border: 8px solid #0091ff;
+  padding: 20px;
+  aspect-ratio: 1/1;
+  text-align: center;
+}
 .container {
   width: 420px;
   height: 450px;
-  background-color: #5c2094;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-top: 30px;
   width: 300px;
   height: 100%;
-  /* border: 1px solid; */
   gap: 5px;
 }
-
-h1 {
-  color: white;
-  margin-top: 40px;
-}
-label {
-  color: white;
-}
-
 .container-check {
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 10px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  /* border: 1px solid red; */
 }
 input {
   padding: 10px;
   border-radius: 15px;
+  border: 3px solid #0091ff;
+  color: #0091ff;
+  font-weight: 800;
 }
-
+::placeholder {
+  color: #0091ff;
+  font-weight: 800;
+}
+input:focus {
+  color: #0091ff;
+  border-color: #0091ff;
+  outline: none;
+}
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 .fields input {
   width: 300px;
 }
@@ -65,17 +76,19 @@ input {
   font-size: 12px;
 }
 button {
-  background-color: white;
+  color: white;
   padding: 20px;
   border-radius: 15px;
-  color: #5c2094;
+  background-color: #0091ff;
+  border: none;
   font-weight: bolder;
   font-size: 15px;
   text-transform: uppercase;
   cursor: pointer;
   transition: scale 0.5s;
+  margin-top: 30px;
+  width: 90%;
 }
-
 button:hover {
   scale: 1.1;
 }
